@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mr. Freem</title>
+  <link rel="stylesheet" href="css/maincss.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div><a class="logo" href="#home">MrFreem.com</a></div>
+  <nav>
+    <a href="#skills">Skills & expertise</a>
+    <a href="#projects">Featured projects</a>
+    <a href="#projects">Courses</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+            <!-- dark & light mode bouton -->
+
+        <div class="theme-toggle">
+            <input type="checkbox" id="darkToggle">
+              <label for="darkToggle" class="toggle-label">
+                <span class="toggle-icon"></span>
+                <span class="toggle-ball"></span>
+              </label>
+        </div>
+
+
+        <div class="hero-text">
+          <h1>Hi, I am <span>Mr. Freem</span></h1>
+          <p>Software Development Student building digital products & e-commerce businesses</p>
+
+    <!-- SOCIAL LINKS -->
+    <div class="socials">
+      <a href="https://github.com/MrFreem3122" target="_blank" class="social-btn">
+        <img src="images/github.svg" alt="GitHub">
+      </a>
+
+      <a href="https://instagram.com/TON-INSTAGRAM" target="_blank" class="social-btn">
+        <img src="images/instagram.svg" alt="Instagram">
+      </a>
+
+      <a href="https://mail.google.com/mail/?view=cm&to=contact.mrfreem@gmail.com" class="social-btn">
+        <img src="images/gmail.svg" alt="Email">
+      </a>
+
+      <a href="" class="social-btn">
+        <img src="images/linkedin.svg" alt="linkedin">
+      </a>
+    </div>
+
+    <!-- CTA -->
+    <div class="buttons">
+      <a href="#projects" class="btn-primary">View my work</a>
+      <a href="#contact" class="btn-secondary">Get in touch</a>
+
+    </div>
+
+    <div class="download-bouton">
+      <a href="#contact" class="btn-download">
+       <span> <img src="images/download.svg" alt="download"></span>
+        Download My Cv
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/profil.jpeg" alt="Profile">
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2>Skills & Expertise</h2>
+
+  <div class="skill-grid">
+    <div class="skill-card">
+      <h3>&lt;/&gt; Development</h3>
+      <ul>
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Java</li>
+        <li>React (learning)</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>🛒 E-commerce</h3>
+      <ul>
+        <li>Product sourcing (Alibaba, suppliers)</li>
+        <li>Shopify store setup</li>
+        <li>Meta Ads (Facebook & Instagram)</li>
+        <li>Product testing & validation</li>
+        <li>Order & customer management</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>📊 Business</h3>
+      <ul>
+        <li>Online business fundamentals</li>
+        <li>Pricing & offer positioning</li>
+        <li>Basic marketing strategy</li>
+        <li>Problem-solving mindset</li>
+        <li>Project planning</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>🎨 Product & Tools</h3>
+      <ul>
+        <li>Figma (UI mockups)</li>
+        <li>Canva</li>
+        <li>Notion</li>
+        <li>Meta Business Suite</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Featured Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/quiz-project.png" alt="Multiplayer Quiz App">
+      </div>
+
+      <h3>Multiplayer Quiz Web Application</h3>
+      <p>Real-time quiz web application where a game master creates a session and players join using a unique code.</p>
+      
+      <div class="tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>WebSockets</span>
+      </div>
+
+      <button class="btn-primary">View project</button>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/product-testing.png" alt="E-commerce Product Testing">
+      </div>
+
+      <h3>E-commerce Product Testing</h3>
+      <p>Validated product demand before scaling</p>
+
+      <div class="tech">
+        <span>Meta Ads</span>
+        <span>Business Suite</span>
+      </div>
+
+      <button class="btn-primary">View project</button>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/hoodies-store.png" alt="Embroidered Hoodies Website">
+      </div>
+
+      <h3>Embroidered Hoodies E-commerce Website</h3>
+      <p>E-commerce website built for a school project to showcase and sell embroidered hoodies.</p>
+
+      <div class="tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+      <button class="btn-primary">View project</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form" id="contactForm">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <button type="submit" class="btn-primary" id="sendBtn">
+      Send Message ✉️
+    </button>
+  </form>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("C-CRLw9gJAAzkTbBW");
+</script>
+<script>
+  const form = document.getElementById("contactForm");
+  const btn = document.getElementById("sendBtn");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    btn.innerText = "Sending...";
+
+    emailjs
+      .sendForm(
+        "default_service",      // service ID
+        "template_9y7b94e",      // template ID
+        this
+      )
+      .then(
+        () => {
+          btn.innerText = "Send Message ✉️";
+          alert("Message sent successfully ✅");
+          form.reset();
+        },
+        (error) => {
+          btn.innerText = "Send Message ✉️";
+          alert("Failed ❌ : " + error.text);
+        }
+      );
+  });
+</script>
+
+
+<script>
+  const toggle = document.getElementById("darkToggle");
+const body = document.body;
+
+/* Load saved theme */
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+  body.classList.add("dark");
+  toggle.checked = true;
+}
+
+/* Toggle event */
+toggle.addEventListener("change", () => {
+  body.classList.toggle("dark");
+
+  if (body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+});
+</script>
+</body>
+</html>
