@@ -157,7 +157,7 @@ body {
   padding-left: 140px;
   padding-right: 160px;
   height: 1000px;
-  width: 1500px;
+  /*width: 1500px;*/
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -339,7 +339,7 @@ section {
 
 .skills {
   height: 1000px;
-  width: 1500px;
+  /*width: 1500px;*/
   padding: 160px 80px;
 }
 
@@ -603,7 +603,14 @@ body.dark .btn-download {
   color: var(--text-dark);
   border-color: var(--yellow-dark);
 }
+/* download bouton*/
+body.dark .btn-download .text-main {
+  color: var(--yellow-dark);
+}
 
+body.dark .btn-download .text-accent {
+ color: white;
+}
 /* Hover buttons */
 body.dark .btn-primary:hover,
 body.dark .btn-secondary:hover,
@@ -637,4 +644,101 @@ body.dark textarea {
 /* Projects section title */
 body.dark .projects h2 {
   background: #1a1a1a;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    margin-top: 10px;
+  }
+
+  .navbar nav a {
+    margin-left: 0;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    padding: 100px 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  /* SOCIALS */
+  .socials {
+    justify-content: center;
+  }
+
+  /* BUTTONS */
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* DOWNLOAD */
+  .download-bouton {
+    justify-content: center;
+  }
+
+  /* SKILLS */
+  .skills {
+    width: 100%;
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .skill-grid {
+    height: auto;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 100px 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
 }
