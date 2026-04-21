@@ -40,19 +40,19 @@
     <!-- SOCIAL LINKS -->
     <div class="socials">
       <a href="https://github.com/MrFreem3122" target="_blank" class="social-btn">
-        <img src="images/github.svg" alt="GitHub">
+        <img id="githubIcon" src="images/github.svg" alt="GitHub">
       </a>
 
       <a href="https://instagram.com/TON-INSTAGRAM" target="_blank" class="social-btn">
-        <img src="images/instagram.svg" alt="Instagram">
+        <img id="instgamIcon" src="images/instagram.svg" alt="Instagram">
       </a>
 
       <a href="https://mail.google.com/mail/?view=cm&to=contact.mrfreem@gmail.com" class="social-btn">
-        <img src="images/gmail.svg" alt="Email">
+        <img id="gmailIcon" src="images/gmail.svg" alt="Email">
       </a>
 
       <a href="" class="social-btn">
-        <img src="images/linkedin.svg" alt="linkedin">
+        <img id="linkedinIcon" src="images/linkedin.svg" alt="linkedin">
       </a>
     </div>
 
@@ -65,7 +65,7 @@
 
     <div class="download-bouton">
       <a href="#contact" class="btn-download">
-       <span> <img src="images/download.svg" alt="download"></span>
+       <span> <img id="downloadIcon" src="images/download.svg" alt="download"></span>
         Download My Cv
       </a>
     </div>
@@ -238,28 +238,6 @@
 </script>
 
 
-<script>
-  const toggle = document.getElementById("darkToggle");
-const body = document.body;
-
-/* Load saved theme */
-const savedTheme = localStorage.getItem("theme");
-
-if (savedTheme === "dark") {
-  body.classList.add("dark");
-  toggle.checked = true;
-}
-
-/* Toggle event */
-toggle.addEventListener("change", () => {
-  body.classList.toggle("dark");
-
-  if (body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
-});
-</script>
+<script src="/js/main.js"></script>
 </body>
 </html>

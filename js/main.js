@@ -4,25 +4,49 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 });
 
 
-
 const toggle = document.getElementById("darkToggle");
 const body = document.body;
 
-/* Load saved theme */
+/* ICONS */
+const github = document.getElementById("githubIcon");
+const instagram = document.getElementById("instgamIcon");
+const gmail = document.getElementById("gmailIcon");
+const linkedin = document.getElementById("linkedinIcon");
+const download = document.getElementById("downloadIcon");
+
+/* FUNCTION TO SWITCH ICONS */
+function updateIcons(isDark) {
+  if (isDark) {
+    github.src = "images/github-dark.svg";
+    instagram.src = "images/instagram-dark.svg";
+    gmail.src = "images/gmail-dark.svg";
+    linkedin.src = "images/linkedin-dark.svg";
+    download.src = "images/download-dark.svg";
+  } else {
+    github.src = "images/github.svg";
+    instagram.src = "images/instagram.svg";
+    gmail.src = "images/gmail.svg";
+    linkedin.src = "images/linkedin.svg";
+    download.src = "images/download.svg";
+  }
+}
+
+/* LOAD SAVED THEME */
 const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "dark") {
   body.classList.add("dark");
   toggle.checked = true;
+  updateIcons(true);
 }
 
-/* Toggle event */
+/* TOGGLE */
 toggle.addEventListener("change", () => {
   body.classList.toggle("dark");
 
-  if (body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
+  const isDark = body.classList.contains("dark");
+
+  updateIcons(isDark);
+
+  localStorage.setItem("theme", isDark ? "dark" : "light");
 });
