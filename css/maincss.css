@@ -697,7 +697,8 @@ body.dark .projects h2 {
 
   /* BUTTONS */
   .buttons {
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 5em;
     align-items: center;
   }
 
