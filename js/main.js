@@ -1,3 +1,35 @@
+
+
+const form = document.getElementById("contactForm");
+  const btn = document.getElementById("sendBtn");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    btn.innerText = "Sending...";
+
+    emailjs
+      .sendForm(
+        "default_service",      // service ID
+        "template_9y7b94e",      // template ID
+        this
+      )
+      .then(
+        () => {
+          btn.innerText = "Send Message ✉️";
+          alert("Message sent successfully ✅");
+          form.reset();
+        },
+        (error) => {
+          btn.innerText = "Send Message ✉️";
+          alert("Failed ❌ : " + error.text);
+        }
+      );
+  });
+
+
+
+
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
   alert("Message sent successfully!");

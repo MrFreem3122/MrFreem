@@ -157,7 +157,6 @@ body {
   padding-left: 140px;
   padding-right: 160px;
   height: 1000px;
-  /*width: 1500px;*/
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -671,6 +670,7 @@ body.dark .projects h2 {
   /* HERO */
   .hero {
     flex-direction: column;
+    align-items: center;
     padding: 100px 20px;
     width: 100%;
     height: auto;
@@ -679,39 +679,66 @@ body.dark .projects h2 {
 
   .hero-text {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   .hero h1 {
     font-size: 32px;
   }
+ 
+  .hero-image {
+  margin: 20px 0;
+}
 
   .hero-image img {
     width: 200px;
     margin-top: 30px;
+    order: 2;
+    margin: 25px 0;
   }
 
   /* SOCIALS */
   .socials {
+    order: 3;
     justify-content: center;
+    gap: 10px;
   }
 
   /* BUTTONS */
   .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
     justify-content: center;
-    margin-top: 5em;
-    align-items: center;
+    margin-top: 20px;
+    /*align-items: center;*/
   }
 
   .btn-primary,
   .btn-secondary {
     width: 100%;
-    max-width: 250px;
+    max-width: 140px;
   }
 
   /* DOWNLOAD */
   .download-bouton {
+    margin-top: 15px;
     justify-content: center;
   }
+
+/* social boutons*/
+
+  .social-btn {
+  width: 38px;
+  height: 38px;
+}
+
+.social-btn img {
+  width: 18px;
+  height: 18px;
+}
 
   /* SKILLS */
   .skills {

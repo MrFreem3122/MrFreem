@@ -84,17 +84,18 @@
 
   <div class="skill-grid">
     <div class="skill-card">
-      <h3>&lt;/&gt; Development</h3>
+      <h3> Development</h3>
       <ul>
         <li>Web Development (HTML, CSS, JavaScript)</li>
         <li>Java</li>
+        <li>C#</li>
         <li>React (learning)</li>
         <li>Git & GitHub</li>
       </ul>
     </div>
 
     <div class="skill-card">
-      <h3>🛒 E-commerce</h3>
+      <h3> E-commerce</h3>
       <ul>
         <li>Product sourcing (Alibaba, suppliers)</li>
         <li>Shopify store setup</li>
@@ -105,7 +106,7 @@
     </div>
 
     <div class="skill-card">
-      <h3>📊 Business</h3>
+      <h3> Business</h3>
       <ul>
         <li>Online business fundamentals</li>
         <li>Pricing & offer positioning</li>
@@ -116,7 +117,7 @@
     </div>
 
     <div class="skill-card">
-      <h3>🎨 Product & Tools</h3>
+      <h3> Product & Tools</h3>
       <ul>
         <li>Figma (UI mockups)</li>
         <li>Canva</li>
@@ -206,39 +207,9 @@
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  emailjs.init("C-CRLw9gJAAzkTbBW");
-</script>
-<script>
-  const form = document.getElementById("contactForm");
-  const btn = document.getElementById("sendBtn");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    btn.innerText = "Sending...";
-
-    emailjs
-      .sendForm(
-        "default_service",      // service ID
-        "template_9y7b94e",      // template ID
-        this
-      )
-      .then(
-        () => {
-          btn.innerText = "Send Message ✉️";
-          alert("Message sent successfully ✅");
-          form.reset();
-        },
-        (error) => {
-          btn.innerText = "Send Message ✉️";
-          alert("Failed ❌ : " + error.text);
-        }
-      );
-  });
-</script>
-
-
+<script>emailjs.init("C-CRLw9gJAAzkTbBW");</script>
 <script src="/js/main.js"></script>
+
+
 </body>
 </html>
